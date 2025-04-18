@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Analýza Zápasů</title>
+  <link rel="icon" href="https://i.imgur.com/BrmPqfP.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    #container {
+      width: 100%;
+      max-width: 800px;
+      background: #222;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+    .table-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 2rem;
+    }
+    .table-wrapper {
+      flex: 1 1 45%;
+      min-width: 250px;
+    }
+    .table-wrapper h3 {
+      margin-bottom: 0.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #333;
+      color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #444;
+    }
+    input[type="number"] {
+      width: 100%;
+      height: 30px;
+      border: none;
+      text-align: center;
+      font-size: 14px;
+      box-sizing: border-box;
+      background-color: #222;
+      color: #fff;
+    }
+    input[type="number"]:focus {
+      outline: none;
+      background-color: #333;
+    }
+    @media (max-width: 600px) {
+      .table-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .table-wrapper {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Analýza výkonnosti hráče/týmu</h1>
+    <div class="table-container">
+      <div class="table-wrapper">
+        <h3>Hráč/Tým 1</h3>
+        <table>
+          <tr>
+            <th>s1</th>
+            <th>s2</th>
+            <th>s3</th>
+            <th>s4</th>
+          </tr>
+          <tr>
+            <td><input type="number" step="1" min="0" placeholder=""></td>
+            <td><input type="number" step="1" min="0" placeholder=""></td>
+            <td><input type="number" step="1" min="0" placeholder=""></td>
+            <td><input type="number" step="1" min="0" placeholder=""></td>
+          </tr>
+        </table>
+      </div>
+      <div class="table-wrapper">
+        <h3>Hráč/Tým 2</h3>
+        <table>
+          <tr>
+            <th>s1</th>
+            <th>s2</th>
+            <th>s3</th>
+            <th>s4</th>
+          </tr>
+          <tr>
+            <td><input type="number" step="1" min="0" placeholder=""></td>
+            <td><input type="number" step="1" min="0" placeholder=""></td>
+            <td><input type="number" step="1" min="0" placeholder=""></td>
+            <td><input type="number" step="1" min="0" placeholder=""></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
